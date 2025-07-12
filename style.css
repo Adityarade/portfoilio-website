@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p+U8Y8rCJ6h8A4l8P8wGZj4eO2U+DUUg+i43CvzG/BBvKSkX1nI/nLB82xGAc/E9hj8+uy+Tg3qvJ1Z3z9Fd9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: white;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: #1f1f1f;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      color: #00f0ff;
+    }
+
+    .home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px;
+      flex-wrap: wrap;
+    }
+
+    .home-content {
+      max-width: 600px;
+    }
+
+    .home-content h3 {
+      font-size: 1.5rem;
+    }
+
+    .home-content h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+    }
+
+    .home-content span {
+      color: #00f0ff;
+    }
+
+    .home-content p {
+      margin: 20px 0;
+      color: #bbb;
+    }
+
+    .socials {
+      margin: 20px 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    .socials a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background: #1f1f1f;
+      border: 2px solid #00f0ff;
+      border-radius: 50%;
+      color: #00f0ff;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      background: #00f0ff;
+      color: #0f0f0f;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #00f0ff;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      background: #00f0ff;
+      color: black;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 20px #00f0ff;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #00d6e6;
+    }
+
+    .home-img {
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .hexagon {
+      width: 300px;
+      height: 300px;
+      background: #00f0ff;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 30px #00f0ff;
+    }
+
+    .hexagon img {
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .home {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-img {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio.</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1><strong>John Kendric</strong></h1>
+      <h3>And I'm a <span>Frontend Developer</span></h3>
+      <p>I'm a passionate Frontend Developer with a love for creating modern, responsive, and user-friendly web applications. With a strong foundation in HTML, CSS, and JavaScript, I build digital experiences that are not only visually appealing but also performant and accessible. Let's turn ideas into impactful solutions!</p>
+      <div class="socials">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <div class="hexagon">
+        <img src="https://via.placeholder.com/200x250" alt="Profile Photo" />
+      </div>
+    </div>
+  </section>
+</body>
+</html>
