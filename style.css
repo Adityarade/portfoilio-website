@@ -151,42 +151,4 @@
         margin-top: 40px;
       }
     }
-  </style>
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Portfolio.</div>
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="home">
-    <div class="home-content">
-      <h3>Hello, It's Me</h3>
-      <h1><strong>John Kendric</strong></h1>
-      <h3>And I'm a <span>Frontend Developer</span></h3>
-      <p>I'm a passionate Frontend Developer with a love for creating modern, responsive, and user-friendly web applications. With a strong foundation in HTML, CSS, and JavaScript, I build digital experiences that are not only visually appealing but also performant and accessible. Let's turn ideas into impactful solutions!</p>
-      <div class="socials">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <a href="#" class="btn">Download CV</a>
-    </div>
-
-    <div class="home-img">
-      <div class="hexagon">
-        <img src="https://via.placeholder.com/200x250" alt="Profile Photo" />
-      </div>
-    </div>
-  </section>
-</body>
-</html>
+ 
